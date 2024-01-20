@@ -2,7 +2,7 @@ class TextAnalyzer:
     def __init__(self, text):
         formatted_text = formatted_text.lower()
         formatted_text = text.replace(',', '').replace('.','').replace('?','').replace('!','')
-    self.fmtText = formatted_text
+        self.fmtText = formatted_text
       
     def word_count(self):
         word_list = self.fmtText.split(' ') 
