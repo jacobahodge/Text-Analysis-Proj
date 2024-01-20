@@ -22,9 +22,9 @@ At last, we will Assign the formatted text to a new attribute called fmtText.
 """
 class TextAnalyzer:
     def __init__(self, text):
-        formatted_text = formatted_text.lower()  # making the text lowercase
         formatted_text = text.replace(',', '').replace('.','').replace('?','').replace('!','') # removing punctuation
-    self.fmtText = formatted_text
+        formatted_text = formatted_text.lower()  # making the text lowercase
+        self.fmtText = formatted_text
 
 """
 Step-4 Implement a code to count the Frequency of all unique words:
@@ -37,9 +37,9 @@ In this step, we will Implement the freqAll() method with the below parameters:
 """
 class TextAnalyzer:
     def __init__(self, text):
-        formatted_text = formatted_text.lower()  # making the text lowercase
         formatted_text = text.replace(',', '').replace('.','').replace('?','').replace('!','') # removing punctuation
-    self.fmtText = formatted_text  # fmtText is an instance of the class.
+        formatted_text = formatted_text.lower()  # making the text lowercase
+        self.fmtText = formatted_text  # fmtText is an instance of the class.
       
     def word_count(self):                # new method to create a dict with key of each unique word and the value as the count of the word in the provided text.
         word_list = self.fmtText.split(' ')   # Splitting the formatted text into individual words. 
@@ -74,9 +74,9 @@ text = ("Lorem ipsum dolor! diam amet, consetetur Lorem magna. sed diam nonumy e
 
 class TextAnalyzer:
     def __init__(self, text):
-        formatted_text = formatted_text.lower()
         formatted_text = text.replace(',', '').replace('.','').replace('?','').replace('!','')
-    self.fmtText = formatted_text
+        formatted_text = formatted_text.lower()
+        self.fmtText = formatted_text
       
     def word_count(self):
         word_list = self.fmtText.split(' ') 
@@ -94,7 +94,7 @@ class TextAnalyzer:
             return 0 
 
 """
-Iteracting with our class and methods
+Interacting with our class and methods
 """
 # 1.) Create an instance of TextAnalyzer Class
 analyzed = TextAnalyzer(some_text) # remember that "text" is a required argument for the TextAnalyzer class so in this case "some_text" is an example of likely a long text string we want to analyze.
